@@ -24,6 +24,14 @@ public class Main {
       
       Student sad = new Student();
       System.out.println(sad);
+
+      // Test ACCESSOR/GETTER methods
+      // methods that RETURN output need to be handled
+      // 1. either by storing the output in a variable 
+      String juniorEmail = junior.getEmail();
+      System.out.println(juniorEmail);
+      // 2. or by using the method call directly
+      System.out.println(kinder.getEmail());
       
    }
 }
