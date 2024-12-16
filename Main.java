@@ -33,5 +33,16 @@ public class Main {
       // 2. or by using the method call directly
       System.out.println(kinder.getEmail());
       
+      // Test MUTATOR/SETTER methods
+      // void methods (no ouput)
+      // but they need an argument (input)
+      kinder.setFirstName("James");
+      kinder.setLastName("Walet");
+      System.out.println(kinder);
+      kinder.setEmail("James.Walter2037@gbwl.org");
+      System.out.println(kinder);
+      // note that didn't need to setGradYear because the DEFAULT CONSTRUCTOR gave an appropriate 
+      // value fo rthis already (we chose 2037 as teh dafault)
+      
    }
 }
