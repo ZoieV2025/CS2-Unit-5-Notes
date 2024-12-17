@@ -44,5 +44,10 @@ public class Main {
       // note that didn't need to setGradYear because the DEFAULT CONSTRUCTOR gave an appropriate 
       // value fo rthis already (we chose 2037 as teh dafault)
       
+      // Use the Object Class' equals() method
+      // Checks the values of each isntance variable
+      // junior is the CALLING OBJECT, kinder is the ARGUMENT
+      boolean isEqual = junior.equals(kinder);
+      
    }
 }
