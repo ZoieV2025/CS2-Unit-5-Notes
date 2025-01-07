@@ -38,49 +38,77 @@ public class StudentDocs {
     }
 
 
-
+/**
+ * @return String representing the object instance and variables
+ */
     public String toString() {
         return ("Student[" + firstName + "," + gradYear + "," + email + "]");
     }
 
-
+/**
+ * @return getFirstName Students first name as a String
+ */
     public String getFirstName() {
         return firstName;
     }
+
+/**
+* @return getLastName Student's last name as a String
+*/
     public String getLastName() {
         return lastName;
     }
+    /**
+     * @return getGrad Year Student's graduation year as an int
+     */
     public int getGradYear() {
         return gradYear;
     }
+/**
+ * @return getEmail Student's emal address as a String
+ */
     public String getEmail() {
         return email;
     }
 
+/**
+ * @param newFirstName - a String to change Student's first name to
+ */
     public void setFirstName(String newFirstName) {
         firstName = newFirstName;
     }
-
+/**
+ * @param newLastName - a String to change Student's last name to
+ */
     public void setLastName(String newLastName) {
         lastName = newLastName;
     }
-
+/**
+ * @param newGradYear - a String to change a Student's grad year to
+ */
     public void setGradYear(int newGradYear) {
         gradYear = newGradYear;
     }
-
+/**
+ * @param newEmail -  a String to change Student's email address to
+ */
     public void setEmail(String newEmail) {
         email = newEmail;
     }
 
 
    
-
+/**
+ * Prints out a complaint message
+ */
    public void complain() {
     System.out.println("I have too much work");
 
  }
-
+/**
+ * Loops from numAssignments, decreasing until there are 0 assignments left and prints a message indicating the Student is doen with their homework. 
+ * @param numAssignments - an int representing the amount of homework assignments to be compelted by the Student
+ */
  public void doHomework(int numAssignments) {
     for (int i = numAssignments; i > 0; i-- ) {
        System.out.println("Working working working...");
@@ -90,8 +118,11 @@ public class StudentDocs {
 
 
     // Testing the Student class documentation
-    StudentDocs test = new StudentDocs()
-
+    // HOVER over the words to view the docs we wrote!
+    StudentDocs test = new StudentDocs("Roaree", "Lion", 2025)
+    test.getEmail();
+    test.setGradYear(2026);
+    test.doHomework(10);
  }
 
 }
