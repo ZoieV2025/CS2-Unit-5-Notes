@@ -1,8 +1,11 @@
 public class Main {
 
    // This is the "TESTER CLASS" with main method
+   // main method is STATIC because a class ("program") should only have one entry point
+   // (reminder: the MAIN METHOD is what executes when the RUN button is pressed)
    public static void main(String []args) {
       System.out.println("Constructing Student objects...");
+
 
       // Call DEFAULT CONSTRUCTOR
       // "Student senior" is the type declaration
@@ -54,6 +57,7 @@ public class Main {
     junior.complain();
     // Exampple: no output, NEEDS input
     junior.doHomework(8);
+
 
    }
 

@@ -119,10 +119,17 @@ public class StudentDocs {
 
     // Testing the Student class documentation
     // HOVER over the words to view the docs we wrote!
-    StudentDocs test = new StudentDocs("Roaree", "Lion", 2025)
+    StudentDocs test = new StudentDocs("Roaree", "Lion", 2025);
     test.getEmail();
     test.setGradYear(2026);
     test.doHomework(10);
- }
+
+    // Demonstrate use of STATIC methods (one copy for a class)
+    // Static methods are called on the CLASS name, NOT an object instance
+    Student.printObjectCount();
+    
+    Student middleSchooler = new Student();
+    Student.printObjectCount(); 
+}
 
 }
